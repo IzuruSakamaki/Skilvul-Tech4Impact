@@ -3,8 +3,12 @@
 - Mohammad Ifaizul Hasan – Kelompok 20
 
 ## Pengerjaan
-### Nomor 1,2,3 dapat dilihat pada link berikut
-
+### Nomor 1
+https://css-module-izul-20.netlify.app/01-selector/selector.html
+### Nomor 2
+https://css-module-izul-20.netlify.app/02-box-model/box-model.html
+### Nomor 3
+https://css-module-izul-20.netlify.app/03-display/display.html
 ### Nomor 4
 #### Flexbox Froggy Nomor 1
 ![gambar-1](https://raw.githubusercontent.com/IzuruSakamaki/Skilvul-Tech4Impact/main/03-css/04-flexbox/img/froggy-1.jpg?raw=true)
