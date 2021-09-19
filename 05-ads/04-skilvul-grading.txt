@@ -1,0 +1,20 @@
+BEGIN
+    STORE  originalGrade  AS  INTEGER  
+    STORE  originalGrade  WITH  VALUE  MORE  THAN  EQUAL  0  AND  LESS  THAN  EQUAL  100
+    STORE  finalGrade  AS  INTEGER  
+
+    IF  originalGrade  LESS  THAN  68
+        SET  finalGrade  WITH  originalGrade
+        DISPLAY  "You  have  to  study  more.  Your  Final  Grade  is  "  CONCAT  WITH  finalGrade
+    ELSE  
+        IF  (originalGrade  MODULUS  BY  5  EQUAL  THAN  0)
+            SET  finalGrade  WITH  originalGrade
+        ELSE  IF  ((originalGrade  PLUS  1)  MODULUS  BY  5  EQUAL  THAN  0)
+            SET  finalGrade  WITH  originalGrade  PLUS  1
+        ELSE  IF  ((originalGrade  PLUS  2)  MODULUS  BY  5  EQUAL  THAN  0)
+            SET  finalGrade  WITH  originalGrade  PLUS  2
+        ELSE  
+            SET  finalGrade  WITH  originalGrade
+    DISPLAY  "Good  Job.  Your  Final  Grade  is  "  CONCAT  WITH  finalGrade
+    END  IF
+END

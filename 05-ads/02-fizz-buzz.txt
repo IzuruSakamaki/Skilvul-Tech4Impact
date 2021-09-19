@@ -1,0 +1,19 @@
+BEGIN
+    STORE  "maxNumber"  as  INTEGER  WITH  ANY  VALUE
+    STORE  "numberValue"  as  INTEGER  WITH  ANY  VALUE  
+    IF  "maxNumber"  LESS  THAN  1
+        DISPLAY  "Value  must  1  to  maxNumber"
+    ELSE  
+        STORE  "numberValue"  WITH  1
+        WHILE  "numberValue"  LESS  THAN  EQUAL  "maxNumber"
+            IF  "numberValue"  MODULUS  BY  3  EQUAL  0  AND  "numberValue"  MODULUS  BY  5  EQUAL  THAN  0  
+                DISPLAY  "FizzBuzz"
+            ELSE  IF  "numberValue"  MODULUS  BY  3  EQUAL  THAN  0  
+                DISPLAY  "Fizz"
+            ELSE  IF  "numberValue"  MODULUS  BY  5  EQUAL  THAN  0  
+                DISPLAY  "Buzz"
+            ELSE  DISPLAY  "numberValue"
+            SET  "numberValue"  WITH  "numberValue"  PLUS  1
+        END  WHILE
+    END  IF
+END

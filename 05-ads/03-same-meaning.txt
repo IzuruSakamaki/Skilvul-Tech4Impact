@@ -1,0 +1,18 @@
+BEGIN
+    STORE  arrayName  as  ARRAY  WITH  ANY  VALUE  
+    STORE  firstVariable  as  INTEGER  WITH  0  
+    STORE  wordLength  as  INTEGER
+    STORE  lastVariable  as  INTEGER  WITH  wordLength  MINUS  1  
+    
+    IF  lastVariable  MORE  THAN  EQUAL  0
+        WHILE  lastVariable  LESS  THAN  wordLength  
+            IF  arrayName  INDEX  firstVariable  IS  NOT  arrayName  INDEX  lastVariable
+                DISPLAY  "FALSE"
+            ELSE  DISPLAY  "TRUE"
+                SET  lastVariable  WITH  lastVariable  MINUS  1
+                SET  firstVariable  WITH  firstVariable  PLUS  1
+        END  WHILE
+    ELSE
+        DISPLAY  "Selesai"
+    END  IF
+END

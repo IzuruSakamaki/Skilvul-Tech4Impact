@@ -1,0 +1,21 @@
+BEGIN
+    STORE  "tempValue"  AS  INTEGER  WITH  ANY  VALUE
+    STORE  "tempType"  AS  STRING  WITH  ANY  VALUE
+    STORE  "countResult"  AS  INTEGER  WITHOUT  ANY  VALUE
+
+    IF  "tempType"  WITH  "Celcius"  
+        SET  "countResult"  VALUE  WITH  "tempValue"
+        DISPLAY  "countResult"
+    ELSE  IF  "tempType"  WITH  "Fahrenheit"  
+        CALCULATE  ("tempValue"  MINUS  32)  TIMES  (5  DIVIDE  9)
+        SET  "countResult"  VALUE  WITH  CALCULATION  RESULT
+        DISPLAY  "countResult"
+    ELSE  IF  "tempType"  WITH  "Kelvin"  
+        CALCULATE  ("tempValue"  MINUS  273.15)
+        SET  "countResult"  VALUE  WITH  CALCULATION  RESULT
+        DISPLAY  "countResult"
+    ELSE  
+        DISPLAY  "Error  to  Identify  Your  Input"
+    END  IF
+END
+
