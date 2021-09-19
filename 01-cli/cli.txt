@@ -1,0 +1,23 @@
+1. mkdir Mohammad\ Ifaizul\ Hasan
+2. cd Mohammad\ Ifaizul\ Hasan/ && mkdir sekolah kerja
+3. a. cd sekolah && cat > ijazah.txt
+	Perkenalkan namaku Mohammad Ifaizul Hasan
+	Aku berasal dari Surabaya
+	Salam Kenal :D (CTRL+D)
+   b. cat ijazah.txt
+   c. cat > portfolio.txt
+	Saya pernah bekerja pada beberapa perusahaan salah satu diantaranya ialah
+
+	- PDAM Surya Sembada
+	- Tokopedia
+	- Bukalapak (CTRL+D) 
+4. cd ../
+5. a. cd kerja && cat > cv.txt
+	Salam,
+	
+	Perkenalkan namaku Mohammad Ifaizul Hasan, saya memiliki kegemaran
+	- Bersepeda
+	- Makan
+	- Bermain
+  b. cat cv.txt
+6. mv ../sekolah/portfolio.txt ../kerja/
