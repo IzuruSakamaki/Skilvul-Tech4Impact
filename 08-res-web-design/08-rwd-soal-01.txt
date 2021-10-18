@@ -1,0 +1,10 @@
+1. Responsive web design merupakan suatu metode untuk menyesuaikan tampilan web berdasarkan screen device yang berbeda-beda guna meningkatkan user experience yang lebih baik
+2. Relative units
+- %     - vw
+- em    - vh
+- ch    - vmin
+- ex    - vmax
+- rem   - lh
+3. Breakpoint merupakan batas web agar sesuai dengan screen device yang dimiliki. untuk membuat breakpoint dapat menggunakan media query lalu tentukan besaran max atau min width dari screen tertentu
+4. Dapat Menggunakan Flex atau grid
+5. Dapat menggunakan flex dengan justify content dan align items
