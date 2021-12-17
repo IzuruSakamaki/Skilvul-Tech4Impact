@@ -1,0 +1,26 @@
+{
+  "name": "resftul_express_sequelize",
+  "version": "1.0.3",
+  "description": "node express crud api with sequelize",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql"
+  ],
+  "author": "IzuruSakamaki",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mariadb": "^2.5.5",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {}
+}
